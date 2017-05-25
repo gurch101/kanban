@@ -1,6 +1,6 @@
-# React Webpack Boilerplate
+# Kanban
 
-sets up an environment to build web apps with react/redux/react-router, bootstrap, and font awesome using es6 and less.
+A kanban board with group by, sorting, and only the fields you need.
 
 ## Installation
 

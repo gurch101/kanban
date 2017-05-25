@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -19,7 +20,10 @@ module.exports = {
                 test: /\.jsx?/,
                 loader: "eslint-loader",
                 exclude: /node_modules/,
-                enforce: "pre"
+                enforce: "pre",
+                options: {
+                    emitWarning: true
+                }
             },
             {
                 test: /\.jsx?/,
